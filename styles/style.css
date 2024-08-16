@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.bg-color{
+    background-color: black;
+}
+.fnt-color{
+    color: #ffffff;
+}
+.heighlight{
+    background-color: #E6533C;
+}
+.inter-font 
+{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.display-flex{
+    display: flex;
+}
+
+/* navbar */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+    font-style: italic;
+    color: #E6533C;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffffff;
+}
+.home-tab{
+    padding: 8px 12px;
+    border-radius: 18px;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.menu-bar{
+    display: none;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .nav-link{
+        display: none;
+    }
+    .menu-bar{
+        display: inline;
+    }
+}
