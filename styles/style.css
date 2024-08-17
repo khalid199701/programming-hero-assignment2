@@ -33,6 +33,9 @@
     border: none;
     font-weight: 700;
 }
+.des-color{
+    color: #ffffff73;
+}
 /* navbar */
 .navbar{
     justify-content: space-between;
@@ -118,6 +121,26 @@
     left: 30%;
     align-items: center;
 }
+
+/* habit section */
+.habit{
+    text-align: center;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 100px 198px;
+}
+.card{
+    background-color: transparent;
+    width: 14rem;
+}
+.card-img{
+    height: 11.25rem;
+    width: 11.25rem;
+    border-radius: 90px;
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
     
@@ -140,5 +163,12 @@
     }
     .banner-img{
         margin: 0 auto;
+    }
+    .habit{
+        margin: 0 28px;
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 81px;
     }
 }
