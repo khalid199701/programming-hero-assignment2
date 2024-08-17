@@ -128,7 +128,7 @@
         display: inline;
     }
     .navbar{
-        margin: 0 20px;
+        margin: 0 auto;
         justify-content: space-evenly;
     }
     .banner{
