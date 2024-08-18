@@ -141,6 +141,78 @@
     width: 11.25rem;
     border-radius: 90px;
 }
+/* extra mile run */
+.extra-mile{
+    background-color: #222222;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 165px;
+    border-radius: 18px;
+}
+.extra-container{
+    width: 30%;
+    padding: 40px;
+}
+.extra-title{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.extra-img{
+    width: 22.875rem;
+    height: 19.5rem;
+    border-radius: 18px;
+}
+
+/* bmi starts here */
+.bmi{
+    align-items: center;
+    text-align: left;
+}
+.bmi-title{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.bmi-title, .bmi-title-des{
+    padding: 0 384.5px;
+}
+.bmi-container{
+    align-items: center;
+    gap: 175px;
+    background-color: #222222;
+}
+.bmi-chart-container{
+    padding-left: 189px;
+    padding-bottom: 50px;
+}
+.bmi-calculator-container{
+    padding-right: 189px;
+}
+.chart-table th.nowrap, td.nowrap {
+    white-space: nowrap;
+}
+.chart-table, td, th{
+    border: 1px solid #ffffff73;
+    border-collapse: collapse;
+    padding: 15px 20px;
+}
+.chart-title, .bmi-calculator-title{
+    font-size: 1.75rem;
+}
+.bmi-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+.bmi-input, .bmi-input-activity{
+    background-color: #ffffff73;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+}
+.bmi-input-activity{
+    grid-column: 1/span 2;
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
     
@@ -170,5 +242,36 @@
     .card-container{
         grid-template-columns: repeat(1, 1fr);
         margin: 0 81px;
+    }
+    .extra-container{
+        width: 80%;
+        padding: 2rem;
+    }
+    .extra-title{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .extra-mile{
+        flex-direction: column;
+        gap: 0px;
+        margin: 0 0;
+        align-items: center;
+        text-align: left;
+    }
+    .bmi-container{
+        flex-direction: column;
+        gap: 0;
+    }
+    .bmi-title{
+        padding: 30px 20px 0px 20px;
+    }
+    .bmi-title-des{
+        padding: 20px 0;
+    }
+    .bmi-container{
+        gap: 0;
+    }
+    .bmi-chart-container, .bmi-calculator-container{
+        padding: 0 20px;
     }
 }
