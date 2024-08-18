@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+}
 .bg-color{
     background-color: black;
 }
@@ -35,6 +38,9 @@
 }
 .des-color{
     color: #ffffff73;
+}
+.copy-right{
+    text-align: center;
 }
 /* navbar */
 .navbar{
@@ -251,6 +257,37 @@
     top: 70%;
     left: 2%;
 }
+/* achievements */
+.achievements{
+    align-items: center;
+    text-align: center;
+}
+.achievements-card{
+    border: 1px solid #E6533C;
+    border-radius: 5px;
+    width: 120px;
+    height: 120px;
+    margin: 20px 100px;
+    align-items: center;
+}
+.achievements-icons{
+    width: 2rem;
+    margin: 5px 30px;
+}
+footer{
+    background-color: #222222;
+    padding-bottom: 20px;
+}
+.footer-content{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 66px 190px;
+    gap: 100px;
+}
+.footer-brand{
+    margin-right: 100px;
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
     
@@ -322,5 +359,15 @@
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         margin: 70px;
+    }
+    .achievements{
+        flex-direction: column;
+    }
+    .footer-content{
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+        padding: 0 140px;
+        gap: 0;
     }
 }
